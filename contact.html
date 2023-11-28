@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Rocky</title>
+        <link rel="shortcut icon" href="img/rocky-portfolio-logo.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="page-header">
+            <img src="img/rocky-portfolio-logo.svg" alt="circular logo with a sun behind several wildflowers" width="200" class="page-header__item" />
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About Rocky</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="work.html" role="menuitem" class="navigation-list__item">Rocky's Work</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <a href="mailto:rchiado75@gmail.com?subject=Hi%20Rocky!">rchiado75@gmail.com</a>
+            <a href="tel:+1(505)610-1728" aria-label="telephone">+1(505)610-1728</a>
+            <a href="mailto:rchiado75@gmail.com">Contact Rocky</a>
+            <button type="button">Test button</button>
+        </div>
+        <div>
+            <form action="#" method="post" id="contact-form">
+                <label for="email" class="standard-label">Email:*</label>
+                <input type="email" id="email" required>
+
+                <label for="telephone" class="standard-label">Telephone:</label>
+                <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+                <label for="message" class="standard-label">Message*</label>
+                <textarea maxlength="240" id="message" required></textarea>
+
+                <input type="submit" value="Send message">
+            </form>
+        </div>
+        <footer class="page-footer">
+            <!-- Replace social media URLs in footer -->
+            <p>Find me on</p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com"><img src="img/linkedin-icon.svg" alt="LinkedIn icon" /></a>
+                    <a href="https://www.facebook.com"><img src="img/facebook-icon.svg" alt="Facebook icon" /></a>
+                    <a href="https://www.github.com"><img src="img/github-icon.svg" alt="GitHub icon" /></a>
+                </div>
+        </footer>
+        <script src="js/tota11y.min.js"></script>
+    </body>
+</html>

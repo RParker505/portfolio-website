@@ -1,0 +1,278 @@
+/* Color Palette
+--tomato: #F56551;
+--glaucous: #7180ac;
+--delft-blue: #223759;
+--light-blue: #a8d0db;
+--ash-gray: #C3D5CD;
+https://coolors.co/f56551-7180ac-223759-a8d0db-c3d5cd
+*/
+
+:root {
+    --primary-color: #223759;
+    --secondary-color:  #7180ac;
+    --tertiary-color: #FFF8DC;
+    --ash-gray: #C3D5CD;
+    --tomato: #F56551;
+    --light-blue: #a8d0db;
+    --white: #FFFFFF;
+    --header-weight: 600;
+}
+
+body {
+    background-color: var(--ash-gray);
+
+    font-family: 'Inter', sans-serif; /* Use Inter font if available, sans-serif if not */
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 16px;
+    /* sets font size in body to 16px */
+    line-height: 1.2;
+    /* sets line height to 1.2x the size of the font */
+}
+
+h1 {
+    font-weight: var(--header-weight);
+    font-size: 30px;
+}
+
+h2 {
+    font-weight: var(--header-weight);
+    font-size: 24px;
+}
+
+h3 {
+    font-weight: var(--header-weight);
+    font-size: 18px;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:visited {
+    /* visited link */
+    color: var(--secondary-color);
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    /* no underline when hovering over a link */
+    cursor: pointer;
+}
+
+a:active {
+    /* selected link */
+    color: var(--tomato);
+}
+
+button,
+.button {
+    border: none;
+    /* overwrites browser default and resets the border */
+    display: inline-block;
+    font-family: inherit;
+    /* inherits the font family from the outer container, like the body */
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    /* adds spacing around the text within the button */
+    margin: 20px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(195, 213, 205, 0.3);
+    transition: opacity 0.5s;
+}
+
+button:hover, button:focus,
+.button:hover, .button:focus {
+    cursor: pointer;
+    /* lets mouse appear as a hand when hovering over the button */
+    opacity: 0.7;
+    /* reduces opacity of the button when hovered over or focused on. Could change the color instead if there's a background image. */
+}
+
+.navigation-list__item {
+    border: 2px solid transparent;
+    padding: 3px;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navigation-list__item:hover {
+    animation: navigation-animation 0.8s linear forwards;
+}
+
+/* navigation border */
+@keyframes navigation-animation {
+    from {
+        border: 2px solid transparent;
+        padding: 3px;
+    }
+    to {
+        border: solid 2px;
+        border-color: var(--secondary-color);
+        padding: 3px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.profile__portrait {
+    float: left;
+    margin-right: 40px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.balloon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+}
+
+.page-header .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.project-grid__item {
+    background-color: var(--light-blue);
+    padding: 20px;
+    transition-duration: 0.5s;
+    transition-property: color;
+    transition-property: background-color;
+}
+
+.project-grid__item:hover {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.project-grid__item a:visited {
+    color: var(--primary-color);
+}
+
+.project-grid__item:hover a {
+    color: var(--tertiary-color);
+}
+
+.project-grid__item:hover a:active {
+    color: var(--tomato);
+}
+
+.work-header {
+    text-align: center;
+}
+
+@media all and (max-width: 500px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .project-grid {
+        grid-gap: 10px;
+    }
+    .project-grid__item:last-child {
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@keyframes cloud-change {
+    0% {
+        fill: #edc655;
+    }
+    50% {
+        fill: #f76414;
+    }
+    100% {
+        fill: #9400D3;
+    }
+}
+
+@keyframes cloud-move {
+    0% {
+        transform: scale(25%);
+    }
+    50% {
+        transform: scale(50%);
+    }
+    100% {
+        transform: scale(75%);
+    }
+}
+
+.cloud-right {
+    animation: 4s cloud-change infinite alternate linear;
+}
+
+.cloud-left {
+    animation-name: cloud-change, cloud-move;
+    animation-duration: 4s, 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
