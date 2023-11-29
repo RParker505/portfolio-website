@@ -159,6 +159,13 @@ button:hover, button:focus,
     margin: 0 auto;
 }
 
+.about-me__portrait {
+    float: left;
+    margin-right: 40px;
+    width: 250px;
+    border-radius: 50%;
+}
+
 .balloon {
     display: flex;
     justify-content: center;
