@@ -161,6 +161,18 @@ button:hover, button:focus,
     border-radius: 50%;
 }
 
+table, th, td {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  tr:nth-child(even) {background-color: var(--light-blue);}
+  
+  th {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+
 .balloon {
     display: block;
     margin-left: 150px;
