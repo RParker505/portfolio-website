@@ -162,10 +162,17 @@ button:hover, button:focus,
 }
 
 .balloon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    display: block;
+    margin-left: 150px;
+  }
+  
+  .work-experience {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
 
 .page-header {
     display: flex;
