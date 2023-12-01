@@ -253,8 +253,8 @@ table, th, td {
 .project-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     margin: 20px;
 }
@@ -289,6 +289,11 @@ table, th, td {
 .project-grid__item:hover a:active {
     color: #F56551;
 }
+
+.project-grid__item-photo {
+    width: 100%;
+    height: 225px;
+  }
 
 .work-header {
     text-align: center;
