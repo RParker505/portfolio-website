@@ -178,7 +178,7 @@ table, th, td {
     margin-left: 150px;
   }
   
-  .work-experience {
+.work-experience {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -242,6 +242,18 @@ table, th, td {
 
 .work-header {
     text-align: center;
+}
+
+.contact-details {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-details__icon {
+    width: 35px;
+    height: auto;
 }
 
 @media all and (max-width: 500px) {
