@@ -234,6 +234,8 @@ table, th, td {
 }
 
 .project-grid__item-photo {
+    display: block;
+    margin: 0 auto;
     width: 350px;
     height: auto;
   }
