@@ -161,6 +161,10 @@ button:hover, button:focus,
     border-radius: 50%;
 }
 
+.hobbies-list {
+    list-style: none;
+}
+
 table, th, td {
     text-align: center;
     padding: 15px;
