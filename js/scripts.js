@@ -53,7 +53,7 @@
         return false;
       }
   
-      if (value.length !== 10) {
+      if (value.length < 10) {
         showErrorMessage(telephoneInput, 'Enter a valid phone number');
         return false;
       }
