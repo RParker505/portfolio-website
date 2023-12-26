@@ -93,6 +93,7 @@
   // eventListeners run the validation in real time, showing errors as the user types.
     emailInput.addEventListener('input', validateEmail);
     telephoneInput.addEventListener('input', validateTelephone);
+    messageInput.addEventListener('input', validateMessage);
   
     // THE RETURN STATEMENT HERE
   })();
