@@ -420,3 +420,7 @@ table, th, td {
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
 }
+
+.error-message {
+    color: red;
+  }

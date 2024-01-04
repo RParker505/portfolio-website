@@ -41,16 +41,19 @@
         </div>
         <div>
             <form action="#" method="post" id="contact-form">
-                <label for="email" class="standard-label">Email:*</label>
-                <input type="email" id="email" required placeholder="example@gmail.com">
-
-                <label for="telephone" class="standard-label">Telephone:</label>
-                <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890">
-
-                <label for="message" class="standard-label">Message*</label>
-                <textarea maxlength="240" id="message" required></textarea>
-
-                <input type="submit" value="Send message">
+                <div>
+                    <label for="email" class="standard-label">Email:*</label>
+                    <input type="email" id="email" required placeholder="example@gmail.com">
+                </div>
+                <div>
+                    <label for="telephone" class="standard-label">Telephone:</label>
+                    <input type="tel" id="telephone" placeholder="123-456-7890">
+                </div>
+                <div>
+                    <label for="message" class="standard-label">Message*</label>
+                    <textarea maxlength="240" id="message" required></textarea>
+                </div>
+                    <input type="submit" value="Send message">
             </form>
         </div>
         <footer class="page-footer">
@@ -63,5 +66,8 @@
             </div>
         </footer>
         <script src="js/tota11y.min.js"></script>
+        <script src="js/promise-polyfill.js"></script>
+        <script src="js/fetch-polyfill.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
