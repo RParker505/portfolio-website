@@ -1,5 +1,5 @@
 (function() {
-    let form = document.querySelector('#contact-form');
+    let form = document.querySelector('#contact-rocky');
     let emailInput = document.querySelector('#email');
     let telephoneInput = document.querySelector('#telephone');
     let messageInput = document.querySelector('#message');
