@@ -264,8 +264,7 @@ table, th, td {
 .project-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
     margin: 20px 100px;
 }
@@ -304,7 +303,7 @@ table, th, td {
 .project-grid__item-photo {
     display: block;
     margin: 0 auto;
-    width: 350px;
+    width: 80%;
     height: auto;
   }
 
@@ -329,31 +328,19 @@ table, th, td {
     height: auto;
 }
 
-@media all and (max-width: 500px) {
-    .project-grid {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-    .project-grid {
-        -ms-grid-columns: 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media all and (max-width: 750px) {
-    .project-grid {
-        grid-gap: 10px;
-    }
-    .project-grid__item:last-child {
-        grid-column: auto/auto;
-        grid-row: auto/auto;
-    }
     h1 {
         font-size: 22px;
     }
+}
+
+@media all and (max-width: 450px) {
+  .project-grid__item {
+    max-width: 250px;
+  }
+  .project-grid__item-photo {
+    width: auto;
+  }
 }
 
 @-webkit-keyframes cloud-change {
