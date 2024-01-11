@@ -338,9 +338,6 @@ table, th, td {
   .project-grid__item {
     max-width: 250px;
   }
-  .project-grid__item-photo {
-    width: auto;
-  }
 }
 
 @-webkit-keyframes cloud-change {
