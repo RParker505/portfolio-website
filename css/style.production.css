@@ -307,7 +307,7 @@ table, th, td {
     height: auto;
   }
 
-.work-header {
+.work-header, .contact-header {
     text-align: center;
 }
 
