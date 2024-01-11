@@ -320,6 +320,15 @@ table, th, td {
     height: auto;
 }
 
+.contact-form {
+    display: grid;
+    place-items: center;
+}
+
+form {
+    width: 50%;
+}
+
 @media all and (max-width: 750px) {
     h1 {
         font-size: 22px;
