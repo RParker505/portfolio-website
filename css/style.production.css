@@ -328,6 +328,17 @@ table, th, td {
     height: auto;
 }
 
+.contact-form {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    margin: 20px 0;
+}
+
+form {
+    width: 50%;
+}
+
 @media all and (max-width: 750px) {
     h1 {
         font-size: 22px;
