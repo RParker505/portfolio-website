@@ -180,7 +180,7 @@ button:hover, button:focus,
 
 .profile {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .about-me {
@@ -233,7 +233,16 @@ table, th, td {
       text-align: center;
   }
 
-.page-header {
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Inter', sans-serif; /* Use Inter font if available, sans-serif if not */
+    font-weight: 600;
+    font-size: 30px; 
+  }
+
+/* .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -252,7 +261,7 @@ table, th, td {
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: right;
-}
+} */
 
 .project-grid {
     display: grid;
