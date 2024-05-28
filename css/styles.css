@@ -43,6 +43,7 @@ h3 {
 
 a {
     color: #223759;
+    text-decoration: underline;
 }
 
 a:visited {
