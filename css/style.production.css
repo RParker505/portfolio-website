@@ -29,7 +29,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     /* sets font size in body to 16px */
-    line-height: 1.2;
+    line-height: 1.5;
     /* sets line height to 1.2x the size of the font */
 }
 
@@ -168,7 +168,7 @@ button:hover, button:focus,
 }
 
 .profile__portrait {
-    float: left;
+    float: right;
     margin-right: 40px;
     width: 250px;
     border-radius: 50%;
