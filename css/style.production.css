@@ -186,6 +186,10 @@ button:hover, button:focus,
     text-align: center;
 }
 
+.social-media img {
+    margin: 10px;
+}
+
 .profile {
     max-width: 700px;
     margin: 30px auto;
