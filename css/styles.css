@@ -162,7 +162,7 @@ button:hover, button:focus,
 
 .profile__portrait {
     float: right;
-    margin-right: 40px;
+    margin: 20px;
     width: 250px;
     border-radius: 50%;
 }
