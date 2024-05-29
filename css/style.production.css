@@ -279,6 +279,11 @@ table, th, td {
     text-align: right;
 } */
 
+.work-intro {
+    text-align: center;
+    margin: auto 20px;
+}
+
 .project-grid {
     display: -ms-grid;
     display: grid;
