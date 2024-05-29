@@ -22,7 +22,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     /* sets font size in body to 16px */
-    line-height: 1.2;
+    line-height: 1.5;
     /* sets line height to 1.2x the size of the font */
 }
 
@@ -161,8 +161,8 @@ button:hover, button:focus,
 }
 
 .profile__portrait {
-    float: left;
-    margin-right: 40px;
+    float: right;
+    margin: 20px;
     width: 250px;
     border-radius: 50%;
 }
@@ -179,14 +179,18 @@ button:hover, button:focus,
     text-align: center;
 }
 
+.social-media img {
+    margin: 10px;
+}
+
 .profile {
-    max-width: 700px;
+    max-width: 65%;
     margin: 30px auto;
 }
 
 .about-me {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 65%;
+    margin: 30px auto;
 }
 
 .about-me__portrait {
@@ -264,6 +268,11 @@ table, th, td {
     text-align: right;
 } */
 
+.work-intro {
+    text-align: center;
+    margin: auto 20px;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -315,10 +324,7 @@ table, th, td {
 
 .work-header, .contact-header {
     text-align: center;
-}
-
-.contact-header {
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .contact-details__icon {
