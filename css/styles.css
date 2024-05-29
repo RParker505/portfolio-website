@@ -184,13 +184,13 @@ button:hover, button:focus,
 }
 
 .profile {
-    max-width: 700px;
+    max-width: 65%;
     margin: 30px auto;
 }
 
 .about-me {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 65%;
+    margin: 30px auto;
 }
 
 .about-me__portrait {
@@ -319,6 +319,7 @@ table, th, td {
 
 .work-header, .contact-header {
     text-align: center;
+    margin: 30px auto;
 }
 
 .contact-header {
