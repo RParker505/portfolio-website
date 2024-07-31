@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 /*
 * Prefixed by https://autoprefixer.github.io
@@ -22,7 +16,7 @@ https://coolors.co/f56551-7180ac-223759-a8d0db-c3d5cd
 */
 
 body {
-    background-color: #C3D5CD;
+    background-color: #E7EEEB;
 
     font-family: 'Inter', sans-serif; /* Use Inter font if available, sans-serif if not */
     color: #223759;
@@ -245,6 +239,10 @@ table, th, td {
       text-align: center;
   }
 
+  .coding-skills {
+    text-align: left;
+  }
+
   .navbar-brand {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -342,6 +340,8 @@ table, th, td {
 .contact-details__icon {
     width: 35px;
     height: auto;
+    margin-right: 10px;
+    margin-top: 20px;
 }
 
 .contact-form {

@@ -1,30 +1,24 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 /* Color Palette
 --tomato: #F56551;
 --glaucous: #7180ac;
 --delft-blue: #223759;
 --light-blue: #a8d0db;
---ash-gray: #C3D5CD;
-https://coolors.co/f56551-7180ac-223759-a8d0db-c3d5cd
+--mint-cream: #E7EEEB;
+https://coolors.co/e7eeeb-f56551-7180ac-223759-a8d0db
 */
 
 body {
-    background-color: #C3D5CD;
+    background-color: #E7EEEB;
 
     font-family: 'Inter', sans-serif; /* Use Inter font if available, sans-serif if not */
     color: #223759;
     font-weight: 400;
     font-size: 16px;
-    /* sets font size in body to 16px */
     line-height: 1.5;
-    /* sets line height to 1.2x the size of the font */
 }
+
+/*Header styles*/
 
 h1 {
     font-weight: 600;
@@ -40,6 +34,8 @@ h3 {
     font-weight: 600;
     font-size: 18px;
 }
+
+/*Link styles*/
 
 a {
     color: #223759;
@@ -62,112 +58,56 @@ a:active {
     color: #F56551;
 }
 
+/*Button styles*/
+
 button {
-    border: none;
     /* overwrites browser default and resets the border */
+    border: none;
     display: inline-block;
-    font-family: inherit;
     /* inherits the font family from the outer container, like the body */
+    font-family: inherit;
     background-color: #223759;
     color: #FFFFFF;
     text-decoration: none;
     padding: 10px;
-    /* adds spacing around the text within the button */
     margin: 20px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(195, 213, 205, 0.3);
-    -webkit-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }
 
 .button {
     border: none;
-    /* overwrites browser default and resets the border */
     display: inline-block;
     font-family: inherit;
-    /* inherits the font family from the outer container, like the body */
     background-color: #223759;
     color: #FFFFFF;
     text-decoration: none;
     padding: 10px;
-    /* adds spacing around the text within the button */
     margin: 20px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(195, 213, 205, 0.3);
-    -webkit-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }
 
 button:hover, button:focus,
 .button:hover, .button:focus {
     cursor: pointer;
-    /* lets mouse appear as a hand when hovering over the button */
-    opacity: 0.7;
-    /* reduces opacity of the button when hovered over or focused on. Could change the color instead if there's a background image. */
+    opacity: 0.5;
 }
 
-.navigation-list__item {
-    border: 2px solid transparent;
-    padding: 3px;
-}
+/*Navigation styles*/
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Inter', sans-serif; /* Use Inter font if available, sans-serif if not */
+    font-weight: 600;
+    font-size: 30px; 
+  }
 
-.navigation-list__item--active {
-    text-decoration: none;
-}
-
-.navigation-list {
-    list-style-type: none;
-}
-
-.navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-}
-
-.navigation-list__item:hover {
-    -webkit-animation: navigation-animation 0.8s linear forwards;
-            animation: navigation-animation 0.8s linear forwards;
-}
-
-/* navigation border */
-@-webkit-keyframes navigation-animation {
-    from {
-        border: 2px solid transparent;
-        padding: 3px;
-    }
-    to {
-        border: solid 2px;
-        border-color: #7180ac;
-        padding: 3px;
-    }
-}
-@keyframes navigation-animation {
-    from {
-        border: 2px solid transparent;
-        padding: 3px;
-    }
-    to {
-        border: solid 2px;
-        border-color: #7180ac;
-        padding: 3px;
-    }
-}
-
-* {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-.profile__portrait {
-    float: right;
-    margin: 20px;
-    width: 250px;
-    border-radius: 50%;
-}
-
-.page-footer {
+  /*Footer styles*/
+  .page-footer {
     clear: both;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -183,11 +123,21 @@ button:hover, button:focus,
     margin: 10px;
 }
 
+/*Profile(Home) styles*/
+
+.profile__portrait {
+    float: right;
+    margin: 20px;
+    width: 250px;
+    border-radius: 50%;
+}
+
 .profile {
     max-width: 65%;
     margin: 30px auto;
 }
 
+/*About Me styles*/
 .about-me {
     max-width: 65%;
     margin: 30px auto;
@@ -204,10 +154,14 @@ button:hover, button:focus,
     list-style: none;
 }
 
+table {
+    margin: 20px;
+}
+
 table, th, td {
     text-align: center;
     padding: 15px;
-  }
+}
   
   tr:nth-child(even) {background-color: #a8d0db;}
   
@@ -222,53 +176,17 @@ table, th, td {
   }
   
 .work-experience {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
   }
 
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-family: 'Inter', sans-serif; /* Use Inter font if available, sans-serif if not */
-    font-weight: 600;
-    font-size: 30px; 
-  }
-
-/* .page-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 20px;
-}
-
-.page-header__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 200px;
-            flex: 0 1 200px;
-}
-
-.page-header .page-header__item:last-child {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    text-align: right;
-} */
-
-.work-intro {
+  /*
+  My Work styles
+  */
+  .work-intro {
     text-align: center;
     margin: auto 20px;
 }
@@ -283,14 +201,8 @@ table, th, td {
 .project-grid__item {
     background-color: #a8d0db;
     padding: 20px;
-    -webkit-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
+    transition-duration: 0.5s;
     transition-property: color;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
     transition-property: background-color;
 }
 
@@ -327,9 +239,23 @@ table, th, td {
     margin: 30px auto;
 }
 
+/*
+Contact Page styles
+*/
+.contact-details {
+    display: flex;
+    height: 100%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-details__icon {
     width: 35px;
     height: auto;
+    margin: 20px 10px;
 }
 
 .contact-form {
@@ -342,6 +268,9 @@ form {
     width: 50%;
 }
 
+/*
+Other styles
+*/
 @media all and (max-width: 750px) {
     h1 {
         font-size: 22px;
@@ -429,3 +358,94 @@ form {
 .error-message {
     color: red;
   }
+
+
+
+
+
+
+
+
+/* .navigation-list__item {
+    border: 2px solid transparent;
+    padding: 3px;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navigation-list__item:hover {
+    -webkit-animation: navigation-animation 0.8s linear forwards;
+            animation: navigation-animation 0.8s linear forwards;
+} */
+
+/* navigation border
+@-webkit-keyframes navigation-animation {
+    from {
+        border: 2px solid transparent;
+        padding: 3px;
+    }
+    to {
+        border: solid 2px;
+        border-color: #7180ac;
+        padding: 3px;
+    }
+}
+@keyframes navigation-animation {
+    from {
+        border: 2px solid transparent;
+        padding: 3px;
+    }
+    to {
+        border: solid 2px;
+        border-color: #7180ac;
+        padding: 3px;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+} */
+
+
+
+
+
+
+
+/* .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+
+.page-header .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+} */
+
+
+
+
+
