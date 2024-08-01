@@ -170,6 +170,7 @@ button:hover, button:focus,
 }
 
 table {
+    width: 100%;
     margin: 20px;
 }
 
@@ -178,12 +179,26 @@ table, th, td {
     padding: 15px;
 }
   
-  tr:nth-child(even) {background-color: #a8d0db;}
+tr:nth-child(even) {background-color: #a8d0db;}
   
-  th {
+th {
     background-color: #7180ac;
     color: white;
-  }
+}
+
+/* Media query for screens smaller than 450px */
+@media (max-width: 450px) {
+    table {
+        font-size: 12px;
+        max-width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    th, td {
+        padding: 4px 6px;
+    }
+}
 
 .balloon {
     display: block;
