@@ -320,17 +320,6 @@ Contact Page styles
     }
 }
 
-.contact-form {
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    margin: 30px 0;
-}
-
-form {
-    width: 50%;
-}
-
 /*
 Other styles
 */
