@@ -170,6 +170,7 @@ button:hover, button:focus,
 }
 
 table {
+    width: 100%;
     margin: 20px;
 }
 
@@ -178,12 +179,26 @@ table, th, td {
     padding: 15px;
 }
   
-  tr:nth-child(even) {background-color: #a8d0db;}
+tr:nth-child(even) {background-color: #a8d0db;}
   
-  th {
+th {
     background-color: #7180ac;
     color: white;
-  }
+}
+
+/* Media query for screens smaller than 450px */
+@media (max-width: 450px) {
+    table {
+        font-size: 12px;
+        max-width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    th, td {
+        padding: 4px 6px;
+    }
+}
 
 .balloon {
     display: block;
@@ -279,7 +294,6 @@ Contact Page styles
     display: flex;
     height: 100%;
     margin: 50px;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -298,15 +312,27 @@ Contact Page styles
     margin: 20px 10px;
 }
 
-.contact-form {
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    margin: 30px 0;
-}
-
-form {
-    width: 50%;
+/* Media query for screens smaller than 380px */
+/* Places links on their own line for consistent wrapping */
+@media (max-width: 380px) {
+    .contact-details div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+    }
+    
+    .contact-details div a {
+        display: inline-block;
+        margin-top: 5px;
+    }
 }
 
 /*
