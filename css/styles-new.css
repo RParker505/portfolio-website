@@ -12,6 +12,15 @@
     min-height: 100vh;
     color: #333;
   }
+
+  /* H1 Styling */
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin: 20px 0;
+    }
   
   /* Header */
   header {
