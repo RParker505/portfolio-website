@@ -68,6 +68,7 @@
   .intro {
     max-width: 600px;
     text-align: center;
+    line-height: 1.6;
   }
   
   .headshot {
