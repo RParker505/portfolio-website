@@ -53,7 +53,7 @@
   }
   
   header nav ul li a:hover {
-    color: #0073e6;
+    color: #6a5acd;
   }
   
   /* Main Content */
@@ -99,7 +99,7 @@
   }
   
   footer ul li a:hover {
-    color: #0073e6;
+    color: #6a5acd;
   }
 
   /* About Page Main Content */
@@ -133,7 +133,7 @@
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #0073e6;
+    background-color: #6a5acd;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -141,7 +141,7 @@
   }
   
   .resume-link:hover {
-    background-color: #005bb5;
+    background-color: #4636b0;
   }
   
   /* Skills Section */
@@ -244,7 +244,7 @@
     display: inline-block;
     margin-top: 15px;
     padding: 10px 15px;
-    background-color: #0073e6;
+    background-color: #6A5ACD;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -252,7 +252,7 @@
   }
   
   .project-link:hover {
-    background-color: #005bb5;
+    background-color: #4636b0;
   }
   
   /* Responsive Design */
