@@ -342,6 +342,11 @@
         width: 50%;
         height: auto;
     }
+
+    .headshot {
+        width: 50%;
+        height: auto;
+    }
       
     .contact-card__details {
         padding: 15px;
